@@ -1,0 +1,317 @@
+*{  /* formatação padrão da página */
+    
+    padding: 0%;
+    margin: 0%;
+    block-size: border-box;
+    font-family: 'Saira', sans-serif;
+
+}
+
+header{
+
+    
+    background-size: cover;
+    background-position: center;
+    min-height: 40px; /* Altura minima */
+    padding: 70px; /* descer a posição da caixa de texto */
+    background-color: black;
+    
+
+}
+.container{
+
+    max-width: 1400px;/* Largura máxima do container */
+    padding: 0 2%;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+
+.logo{ /* definindo posicionamento e dimensões do logo */
+    
+    background-image: url('../IMAGENS/icce.jpg'); /* colocando imagem pelo css */
+    background-size: 100% 100%; /* posicionamento da imagem sempre dentro independnte do tamanho */
+    position: relative;
+    width: 132px;
+    height: 100px;
+    float: left; /* mandando o logo para a esquerda */
+
+    
+    
+}
+
+.desktop{ /* mandando a caixa do desktop para a direita (onde estão as ancoras da lista) */
+
+    float: right ;
+    
+}
+
+.desktop ul{ /* tirar os tópicos da lista */
+
+    list-style-type: none;
+}
+
+.desktop ul li :hover{
+
+    text-decoration: none;
+    color: rgb(176, 159, 26);
+}
+
+.desktop li{/* colocando as linhas uma ao lado da outra */
+
+    display: inline-block;
+    margin:0 15px;
+}
+
+.desktop a{/* definindo parametros para os itens do desktop */
+    text-decoration: none;
+    color: aliceblue;
+    
+   
+
+}
+
+.mobile{
+
+    
+    position: relative;
+    float: right;
+    display: none;
+   
+
+}
+
+.mobile ul{
+
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    text-align: center;
+    padding: 50px 0 30px 0;
+    top: 0;
+    display: none;
+    
+
+
+
+}
+
+.mobile i{
+
+    position: relative;
+    z-index: 2;/* aparecendo o icone */
+    color: white;
+    
+}
+
+.mobile li{
+
+    padding: 10px 0;
+}
+
+.mobile a{
+
+    text-decoration: none;
+    color:  rgb(176, 159, 26);
+}
+
+
+.produto1{
+   
+    width: 30%;
+    position: relative;
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 70px;
+}
+
+
+
+.sessao-03 .container{
+    
+    
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    position: relative;
+    max-width: 4000px;
+    min-height: 600px;
+   
+  
+   
+    
+}
+
+.produto1 img{
+
+    margin-top: 100px;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin-left: 30%;
+    border-radius: 4%;
+   
+   
+    
+}
+
+.produto1 p{
+
+    
+    margin-top: 35px;
+    margin-left: 15%; 
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+    
+
+}
+
+.preco{
+
+    text-align: center;
+    color: rgb(176, 159, 26);
+    margin: 0 auto;
+    margin-left: 14%;
+    
+}
+
+.conf{
+
+    position: absolute;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 8px;
+    border-radius: 20px;
+    border: 2px solid rgb(176, 159, 26);
+    margin-left: 46%;
+    margin-top:30px;
+    
+    
+
+}
+
+.sessao-05{
+
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    position: relative;
+    max-width: 4000px;
+    min-height: 300px;
+    border-radius: 60px 60px 0px 0px;
+    margin-top: 3%;
+
+
+  
+
+
+    
+}
+.sessao-05 .Info{
+
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 100px;
+    color: white;
+
+    
+
+}
+
+/* ..................................................................... Abaixo tratando responsividade */
+
+
+@media screen and (max-width: 1024px) { 
+
+
+
+    .desktop{
+
+        display: none;
+    }
+    
+    .mobile{
+    
+        display: block;
+    }
+
+    .sessao-03 .container{
+    
+    
+        background-color: rgb(0, 0, 0);
+        background-size: cover;
+        position: relative;
+        max-width: 4000px;
+        min-height: 850px;
+        border-radius: 0, 0, 60%, 60%;
+       
+      
+        
+    }
+    
+
+    .produto1{
+   
+        margin: 0 auto;
+        bottom: auto;
+        width: 40%;
+        position: relative;
+        margin-left: 30%;
+        margin-bottom: 160px;
+    
+    
+    
+        
+        
+    }
+
+    .produto1 img{
+
+        margin-top: 150px;
+        position: relative;
+        width: 200px;
+        height: 150px;
+        margin-left: 30%;
+        border-radius: 4%;
+    
+        
+    }
+   
+    
+    .sessao-05 .Info{
+
+        position: absolute;
+        margin-left: 40%;
+        font-family: sans-serif;
+        margin-top: 100px;
+        text-align:center;
+    
+    
+        
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
